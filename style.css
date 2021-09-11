@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 4vh;
+    width: 100vw;
+    border: 0.5vw solid black;
+    background-color: darkolivegreen;
+}
+
+section {
+    border-style: solid;
+    border-width: 0vw 0.5vw 0.5vw 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 96vh;
+    background-color: darkgreen;
+    overflow: hidden;
+}
+
+div.square_container {
+    position: relative;
+    flex: 40%;
+    width: 350px;
+    left: 20px;
+    top: 0;
+}
+
+div.square {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 25px;
+    left: 150px;
+    border: 2px solid black;
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+div.second_square {
+    left: 30px;
+    top: 145px;
+}
+
+div.equal_with_circle {
+    position: relative;
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+    flex: 20%;
+}
+
+div.equal {
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    width: 115px;
+    height: 15px;
+    border: 2px solid black;
+    background-color: blue;
+}
+
+div.equal_bottom {
+    margin-top: 40px;
+}
+
+div.circle {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 85px;
+    height: 85px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+div.block {
+    flex: 55%;
+    width: 175px;
+    background-color: blue;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    margin-left: -100px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 583px) {
+    nav {
+        height: 7vh;
+    }
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 93vh;
+    }
+    div.block {
+        flex: 30%;
+        width: 175px;
+        height: 700px;
+        background-color: rgb(172, 59, 59);
+        margin-right: 35px;
+    }
+    div.square_container {
+        position: relative;
+        flex: 40%;
+        width: 350px;
+        left: 35px;
+        top: -395px;
+    }
+    div.square {
+        width: 120px;
+        height: 120px;
+        border: 2px solid black;
+        background-color: red;
+        transform: rotate(45deg);
+    }
+    div.first_square {
+        left: 115px;
+        top: 28px;
+    }
+    div.second_square {
+        left: -5px;
+        top: 147px;
+    }
+    div.equal_with_circle {
+        position: relative;
+        justify-content: space-between;
+        width: 200px;
+        height: 200px;
+        flex: 20%;
+        left: -190px;
+        top: 230px;
+    }
+    div.circle {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        width: 110px;
+        height: 110px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    div.equal {
+        position: absolute;
+        top: 65px;
+        left: -65px;
+        width: 115px;
+        height: 19px;
+        border: 2px solid black;
+        background-color: blue;
+    }
+    div.equal_bottom {
+        margin-top: 65px;
+    }
+    p {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 645px) {
+    div.block {
+        flex: 30%;
+        width: 175px;
+        height: 700px;
+        background-color: rgb(172, 59, 59);
+        margin-right: 35px;
+    }
+    div.square_container {
+        position: relative;
+        flex: 40%;
+        width: 350px;
+        left: 35px;
+        top: -395px;
+    }
+    div.square {
+        width: 120px;
+        height: 120px;
+        border: 2px solid black;
+        background-color: red;
+        transform: rotate(45deg);
+    }
+    div.first_square {
+        left: 115px;
+        top: 28px;
+    }
+    div.second_square {
+        left: -5px;
+        top: 147px;
+    }
+    div.equal_with_circle {
+        position: relative;
+        justify-content: space-between;
+        width: 200px;
+        height: 200px;
+        flex: 20%;
+        left: -34%;
+        top: 230px;
+    }
+    div.circle {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        width: 110px;
+        height: 110px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    div.equal {
+        position: absolute;
+        top: 65px;
+        left: -65px;
+        width: 115px;
+        height: 19px;
+        border: 2px solid black;
+        background-color: blue;
+    }
+    div.equal_bottom {
+        margin-top: 65px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    section {
+        flex-direction: row;
+        align-items: center;
+    }
+    div.square_container {
+        position: relative;
+        flex: 30%;
+        width: 350px;
+        left: 35px;
+        top: -395px;
+    }
+    div.equal_with_circle {
+        justify-content: space-between;
+        width: 200px;
+        height: 200px;
+        flex: 0%;
+        left: -14%;
+        top: -25%;
+    }
+    div.block {
+        flex: 0%;
+        width: 175px;
+        height: 700px;
+        background-color: white;
+        margin-right: 35px;
+    }
+    p {
+        font-size: 45px;
+    }
+}
